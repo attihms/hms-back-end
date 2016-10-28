@@ -30,10 +30,6 @@ module.exports = {
         notEmpty: true
       }
     },
-    roomId: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
     roomTypeId: {
       type: DataTypes.INTEGER,
       allowNull: false

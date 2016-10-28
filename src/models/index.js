@@ -3,7 +3,6 @@
 const Sequelize = require('sequelize');
 
 const user = require('./user');
-const registration = require('./registration');
 
 const reservation = require('./reservation');
 const room = require('./room');
@@ -23,7 +22,6 @@ module.exports = function () {
   app.set('sequelize', sequelize);
 
   app.configure(user);
-  app.configure(registration);
   app.configure(reservation);
   app.configure(room);
   app.configure(roomType);
