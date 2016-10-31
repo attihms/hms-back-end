@@ -1,6 +1,7 @@
 'use strict';
 
 const service = require('feathers-sequelize');
+const sequelize = require('sequelize');
 const hooks = require('./hooks');
 
 module.exports = function () {
@@ -9,8 +10,8 @@ module.exports = function () {
   const options = {
     Model: app.get('models').rooms,
     paginate: {
-      default: 100,
-      max: 100
+      default: 5,
+      max: 25
     }
   };
 

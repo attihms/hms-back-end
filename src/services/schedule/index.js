@@ -37,11 +37,6 @@ class Schedule {
     return reservations.find({
       query: query
     });
-    // .then(reservations => {
-    //   return {
-    //     test: reservations
-    //   };
-    // });
   }
 }
 

@@ -30,7 +30,9 @@ roomTypeService.find({paginate: {
   [...Array(100)].map((_, i) => {
     rooms.create({
       name: i + 100 + '',
-      type: randomize(roomTypes.data)['id']
+      type: randomize(roomTypes.data)['id'],
+      capability: randomize([10, 15, 20]),
+      active: true
     });
 
     reservations.create({

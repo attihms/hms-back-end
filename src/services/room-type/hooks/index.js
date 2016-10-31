@@ -7,9 +7,9 @@ const hooks = require('feathers-hooks');
 const manipulateData = (hook, next) => {
   hook.result.data = _.map(hook.result.data, function(type) {
     return {
-      id: type['id'],
-      name: type['name']
-    }
+      id: type.id,
+      name: type.name
+    };
   });
 
   next();

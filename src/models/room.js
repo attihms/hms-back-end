@@ -21,8 +21,9 @@ module.exports = function () {
           notEmpty: true
       }
     },
-    status: {
+    capability: {
       type: DataTypes.INTEGER,
+      defaultValue: 0,
       validate: {
           notEmpty: true
       }
